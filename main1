@@ -1,0 +1,13 @@
+#include "mine.h"
+int main(void)
+{
+
+	push(&head, 10);
+	push(&head, 20);
+	push(&head, 30);
+	push(&head, 40);
+
+	int popped_element = pop(&head);
+	printf("Popped element is: ", popped_element);
+	return 0;
+}

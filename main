@@ -1,0 +1,16 @@
+#include "main.h"
+int main(void)
+{
+	push(10);
+	push(30);
+	push(40);
+	push(50);
+
+	int popped_element = pop(50);
+	if (popped_element != -1)
+	{
+		printf("The popped element is: %d\n", popped_element);
+	}
+	push(70);
+	return (0);
+}

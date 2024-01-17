@@ -1,0 +1,41 @@
+#include "main.h"
+int stack[limit];
+int top;
+int push(int elem)
+{	
+	//define an array for the stack
+	//create a variable to represent the value at top index of hich reps an empty stack
+	top = -1;
+	//give a condition for stack-overflo that is if it exceeds the array limit
+	if (top == limit - 1)
+	{
+	printf("Stack-overflo occurs\n");
+	exit(98);
+	}
+	else
+	{
+	//increment top by one to point to the ne top element
+        top++;
+	//assign a value to index top of the stack
+	stack[top] = elem;
+	return (elem);
+	}
+}
+int pop()
+{
+	//give a condition for stack underflo
+	if (top == -1)
+	{
+		printf("Stock-underflo occurs\n");
+		return (-1);
+	}
+	else
+	{
+		//assign the elem to index of top
+		int elem = stack[top];
+		//decrement the top
+		top--;
+		//return elem
+		return (elem);
+	}
+}

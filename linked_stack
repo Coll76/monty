@@ -1,0 +1,42 @@
+#include "mine.h"
+//Let's begin ith the push function
+void push(struct_l **head, int element)
+{
+	struct_l *p = (struct_l *)malloc(sizeof(struct_l));
+	if (!p)
+	{
+		printf("Stack-overflo\n");
+	}
+	else
+	{
+	if ((*head) == NULL)
+	{
+	p->n = element;
+	p->next = NULL;
+	(*head) = p;
+	}
+	else
+	{
+	p->n = element;
+	p->next = (*head);
+	(*head) = p;
+	}
+	}
+}
+void pop(struct_l **head)
+{
+	struct_l *tmp;
+	if ((*head) == NULL)
+	{
+		printf("Stack-underflo\n");
+	}
+	*head = tmp;
+	else
+	{
+	int item =p->data;
+	*head = tmp;
+	tmp = tmp->next;
+	free(p);
+	printf("The deleted item is: ", item);
+	}
+}
