@@ -1,13 +1,12 @@
 #include "monty.h"
 /**
- * print_stack - prints stack
+ * pall - prints stack
  * @head: pointer to nodes ithin stack
- * @n: data to assign
+ * @line_number: data to assign
  */
-void print_stack(stack_t **head, unsigned int n)
+void pall(stack_t **head, unsigned int line_number __attribute__((unused)))
 {
 	stack_t *current = *head;
-	(void)n;
 
 	while (current != NULL)
 	{
