@@ -37,4 +37,5 @@ void pall(stack_t **head, unsigned int n);
 void push(stack_t **head, unsigned int n);
 int is_integer(char *str);
 extern instruction_t instructions[];
+void free_list(stack_t **head);
 #endif

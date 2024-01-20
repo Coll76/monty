@@ -65,6 +65,7 @@ int main(int argc, char *argv[])
 	}
 		line_number++;
 	}
+	free_list(&gstack);
 	free(line);
 	fclose(stack);
 	return (0);
