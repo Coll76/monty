@@ -11,6 +11,7 @@ instruction_t instructions[] = {
 	{"push", push},
 	{"pall", pall},
 	{"pint", pint},
+	{"pop", pop},
 	{NULL, NULL}};
 int main(int argc, char *argv[])
 {
@@ -66,7 +67,7 @@ int main(int argc, char *argv[])
 	}
 		line_number++;
 	}
-	free_list(&gstack);
+	/*free_list(&gstack);*/
 	free(line);
 	fclose(stack);
 	return (0);

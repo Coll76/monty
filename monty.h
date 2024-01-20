@@ -39,4 +39,5 @@ int is_integer(char *str);
 extern instruction_t instructions[];
 void free_list(stack_t **head);
 void pint(stack_t **head, unsigned int n);
+void pop(stack_t **head, unsigned int n);
 #endif
