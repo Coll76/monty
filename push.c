@@ -19,7 +19,7 @@ void push(stack_t **head, unsigned int n)
 	ne_node = (stack_t *)malloc(sizeof(stack_t));
 	if (!ne_node)
 	{
-		printf("Error: malloc failed\n");
+		fprintf(stderr, "Error: malloc failed\n");
 		exit(EXIT_FAILURE);
 	}
 	ne_node->n = value;

@@ -65,7 +65,6 @@ int main(int argc, char *argv[])
 	}
 		line_number++;
 	}
-	printf("%d\n", line_number);
 	free(line);
 	fclose(stack);
 	return (0);
