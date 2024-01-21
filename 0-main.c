@@ -11,10 +11,10 @@
 instruction_t instructions[] = {
 	{"push", push},
 	{"pall", pall},
-	{"pint", pint},
-	{"pop", pop},
-	{"swap", swap},
-	{"add", add},
+	/*{"pint", pint},*/
+	/*{"pop", pop},*/
+	/*{"swap", swap},*/
+	/*{"add", add},*/
 	{NULL, NULL}};
 int main(int argc, char *argv[])
 {
