@@ -17,7 +17,7 @@ void add(stack_t **head, unsigned int n)
 	}
 	else
 	{
-		fprintf(stderr, "L%d: can't add, stack too short", n);
+		fprintf(stderr, "L%d: can't add, stack too short\n", n);
 		exit(EXIT_FAILURE);
 	}
 }
