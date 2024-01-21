@@ -39,6 +39,10 @@ int is_integer(char *str);
 extern instruction_t instructions[];
 void free_list(stack_t **head);
 void pint(stack_t **head, unsigned int n);
+#define MAX_LINE_LENGTH 1024
+extern instruction_t instructions[];
 void pop(stack_t **head, unsigned int n);
+void add(stack_t **head, unsigned int n);
+#define _POSIX_C_SOURCE 200809L
 void swap(stack_t **head, unsigned int n);
 #endif

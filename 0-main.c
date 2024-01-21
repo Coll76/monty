@@ -1,9 +1,10 @@
 #include "instructions.h"
 #include <unistd.h>
 #include <stdio.h>
-#define MAX_LINE_LENGTH 1024
 /**
  * main - Test functionality of functions
+ * @argc: argument count
+ * @argv: argument vector
  * Return: Alays 0
  */
 /*Array of instruction*/
@@ -13,6 +14,7 @@ instruction_t instructions[] = {
 	{"pint", pint},
 	{"pop", pop},
 	{"swap", swap},
+	{"add", add},
 	{NULL, NULL}};
 int main(int argc, char *argv[])
 {
